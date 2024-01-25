@@ -1,0 +1,128 @@
+@import url('https://fonts.googleapis.com/css2?family=ABeeZee&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #2B2A65;
+    font-family: 'ABeeZee', sans-serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.menu{
+    height: 50px;
+    background-color: #292889;
+    /* display: flex;
+    flex-direction: row; */
+}
+
+.menu ul{
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 1.2rem;
+}
+
+.menu li{
+   margin-top: 2px;
+    list-style: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 5px;
+}
+
+.menu li:hover{
+    background-color: rgb(69, 69, 226);
+    border-radius: 8px;
+    transition: 0.5s ease-in-out;
+}
+
+.body-container{
+    /* width: 953.38px; */
+    height: 617px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    /* border: 2px solid black; */
+}
+
+.body-container .left-container{
+    width: 50%;
+    
+    height: 100%;
+    display: flex;
+    
+}
+
+
+.left-container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 175px;
+    color: whitesmoke;
+}
+
+.left-container h1 {
+    font-size: 8rem;
+    padding-left: 100px;
+    opacity: 0;
+    animation: fadeIn 10s ease-in-out forwards; /* Use the "fadeIn" animation */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Set initial state to trigger the animation */
+.left-container.h1-initial h1 {
+    animation: none; /* Disable the animation initially */
+    opacity: 1; /* Set opacity to 1 to show the element without animation */
+}
+
+
+
+.left-container h2, span{
+    padding-left: 100px;
+    margin-top: 5px;
+}
+
+.left-container span i{
+    margin-top: 10px;
+    font-size: 2.5rem;
+   
+    margin-left: 15px;
+}
+
+.right-container .item{
+    background-color: black;
+    height: 368px;
+    width: 400px;
+    position: relative;
+    z-index: 10;
+    border-radius: 24px;
+    background-color: #292889;
+    box-shadow: 20px 10px 30px rgb(3, 13, 60);
+ }
+
+.right-container img{
+    width: 500px;
+    position: relative;
+    bottom: 150px;
+    right: 35px;
+   
+}
+
+
+
